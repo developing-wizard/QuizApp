@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".ui.QuestionsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="sdasdadasdasd"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/questions10"
+            app:layout_constraintTop_toBottomOf="@id/question_text"
+            app:shapeAppearanceOverlay="@style/roundedViewRounded" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/questionsProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="5"
+
+            android:progressTint="@color/white"
+            android:indeterminate="false"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+        <TextView
+            android:id="@+id/progress_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:gravity="right"
+            android:text="sdasdadasdasd"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/questionsProgress"
+            app:layout_constraintTop_toBottomOf="@id/questionsProgress" />
+
+        <TextView
+            android:id="@+id/option_one"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/progress_text_view"
+            android:background="@drawable/roundcornertextfield"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="fadasdasdsadad"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/option_two"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/option_one"
+            android:background="@drawable/roundcornertextfield"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="fadasdasdsadad"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/option_three"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/option_two"
+            android:background="@drawable/roundcornertextfield"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="fadasdasdsadad"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/option_four"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/option_three"
+            android:background="@drawable/roundcornertextfield"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="fadasdasdsadad"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/check_answer_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/option_four"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Check"
+            android:background="@drawable/gradientrounded"
+            android:layout_marginVertical="45dp"
+            android:gravity="center" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
